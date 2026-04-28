@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Direito Civil: Pessoa Jurídica — Prof. Adriano Március de Souza</title>
 <link href="https://googleapis.com" rel="stylesheet">
+
 <style>
  :root {
  --azul: #1a3a6e; --azul2: #2563eb; --azul3: #3b82f6; --ouro: #c9a84c; --ouro2: #f0c96a;
@@ -54,6 +55,8 @@
  .nav-btn:hover { background: var(--ouro); color: #000; border-color: var(--ouro); }
  #slide-counter { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--txt2); min-width: 80px; text-align: center; }
 </style>
+
+
 </head>
 <body>
 
@@ -196,7 +199,59 @@
  </div>
 </div>
 
-<!-- SLIDE 10: O REGISTRO (ART. 45) -->
+<!-- SLIDE 10: O REGISTRO (EFEITO CONSTITUTIVO) -->
+<div class="slide teoria">
+ <div class="slide-header">
+ <div class="slide-num">Sessão 03</div>
+ <div class="slide-title">O Registro e a Personalidade</div>
+ <div class="title-line"></div>
+ </div>
+ <div class="card">
+ <h3>Artigo 45 do Código Civil</h3>
+ <p>A existência legal começa com a inscrição do ato constituinte no registro respectivo.</p>
+ <div class="destaque">Sem registro = Sociedade de Fato (Sem proteção patrimonial).</div>
+ <ul>
+ <li><strong>Cartório:</strong> Para Associações e Fundações.</li>
+ <li><strong>Junta Comercial:</strong> Para Sociedades Empresárias.</li>
+ </ul>
+ </div>
+</div>
+
+<!-- SLIDE 11: FIXAÇÃO 02 -->
+<div class="slide pratica">
+ <div class="slide-header">
+ <div class="slide-num">Fixação 02</div>
+ <div class="slide-title">O Contrato vs Registro</div>
+ <div class="title-line"></div>
+ </div>
+ <div class="questao-box">
+ <div class="q-enunciado">Sócio 'A' assina o contrato hoje, mas só registra daqui a 30 dias. Quando a empresa passa a ter personalidade jurídica?</div>
+ <div class="q-opcoes">
+ <button class="q-opcao" onclick="responder(this,'errada','Sem registro, é apenas um documento particular.')">A) Na data da assinatura do contrato.</button>
+ <button class="q-opcao" onclick="responder(this,'certa','Exato. O registro é constitutivo para as PJs de Direito Privado.')">B) Na data da inscrição no registro competente.</button>
+ <button class="q-opcao" onclick="responder(this,'errada','CNPJ é registro fiscal apenas.')">C) Quando o CNPJ é liberado.</button>
+ </div>
+ <div class="q-feedback"></div>
+ </div>
+</div>
+
+<!-- SLIDE 12: SOCIEDADES PRIVADAS EM DETALHE -->
+<div class="slide teoria">
+ <div class="slide-header">
+ <div class="slide-num">Sessão 03</div>
+ <div class="slide-title">Sociedades: O Mundo dos Negócios</div>
+ <div class="title-line"></div>
+ </div>
+ <div class="card">
+ <ul>
+ <li><strong>Sociedade Limitada (Ltda):</strong> Responsabilidade restrita ao capital. Foco na confiança entre sócios.</li>
+ <li><strong>Sociedade Anônima (S/A):</strong> Dividida em ações. Foco no capital injetado, não na pessoa do sócio.</li>
+ <li><strong>Sociedade Simples:</strong> Voltada para atividades intelectuais (ex: Advogados, Médicos).</li>
+ </ul>
+ </div>
+</div>
+
+<!-- SLIDE 13: O REGISTRO (ART. 45) -->
 <div class="slide teoria">
  <div class="slide-header">
  <div class="slide-num">Sessão 03</div>
@@ -214,7 +269,7 @@
  </div>
 </div>
 
-<!-- SLIDE 11: SOCIEDADES DE FATO -->
+<!-- SLIDE 14: SOCIEDADES DE FATO -->
 <div class="slide teoria">
  <div class="slide-header">
  <div class="slide-num">Sessão 03</div>
@@ -231,7 +286,7 @@
  </div>
 </div>
 
-<!-- SLIDE 12: QUESTÃO 02 -->
+<!-- SLIDE 15: QUESTÃO 02 -->
 <div class="slide pratica">
  <div class="slide-header">
  <div class="slide-num">Questão 02</div>
@@ -249,7 +304,7 @@
  </div>
 </div>
 
-<!-- SLIDE 13: DESCONSIDERAÇÃO DA PJ -->
+<!-- SLIDE 16: DESCONSIDERAÇÃO DA PJ -->
 <div class="slide alerta">
  <div class="slide-header">
  <div class="slide-num">Sessão 04</div>
@@ -267,7 +322,7 @@
  </div>
 </div>
 
-<!-- SLIDE 14: TEORIA MAIOR VS. TEORIA MENOR -->
+<!-- SLIDE 17: TEORIA MAIOR VS. TEORIA MENOR -->
 <div class="slide teoria">
  <div class="slide-header">
  <div class="slide-num">Sessão 04</div>
@@ -286,7 +341,7 @@
  </div>
 </div>
 
-<!-- SLIDE 15: DESCONSIDERAÇÃO INVERSA -->
+<!-- SLIDE 18: DESCONSIDERAÇÃO INVERSA -->
 <div class="slide teoria">
  <div class="slide-header">
  <div class="slide-num">Sessão 04</div>
@@ -303,7 +358,25 @@
  </div>
 </div>
 
-<!-- SLIDE 16: QUESTÃO 03 -->
+<!-- SLIDE 19: FIXAÇÃO 03 -->
+<div class="slide pratica">
+ <div class="slide-header">
+ <div class="slide-num">Fixação 03</div>
+ <div class="slide-title">Confusão Patrimonial</div>
+ <div class="title-line"></div>
+ </div>
+ <div class="questao-box">
+ <div class="q-enunciado">O sócio usa o cartão de crédito da empresa para pagar a mensalidade escolar dos filhos repetidamente. Isso autoriza a desconsideração?</div>
+ <div class="q-opcoes">
+ <button class="q-opcao" onclick="responder(this,'certa','Correto. Configura confusão patrimonial clara.')">A) Sim, configura confusão patrimonial.</button>
+ <button class="q-opcao" onclick="responder(this,'errada','A lei proíbe essa mistura de contas.')">B) Não, desde que ele devolva o dinheiro depois.</button>
+ <button class="q-opcao" onclick="responder(this,'errada','Apenas desvio de finalidade não basta para o Art. 50.')">C) Apenas se a empresa for de fachada.</button>
+ </div>
+ <div class="q-feedback"></div>
+ </div>
+</div>
+
+<!-- SLIDE 20: QUESTÃO 03 -->
 <div class="slide pratica">
  <div class="slide-header">
  <div class="slide-num">Questão 03</div>
@@ -321,7 +394,7 @@
  </div>
 </div>
 
-<!-- SLIDE 17: EXTINÇÃO DA PJ -->
+<!-- SLIDE 21: EXTINÇÃO DA PJ -->
 <div class="slide teoria">
  <div class="slide-header">
  <div class="slide-num">Conclusão</div>
@@ -338,7 +411,7 @@
  </div>
 </div>
 
-<!-- SLIDE 18: FIM -->
+<!-- SLIDE 22: FIM -->
 <div class="slide capa">
  <div class="capa-inner">
  <div class="capa-title">Fim da Sessão Acadêmica</div>
